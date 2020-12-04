@@ -59,11 +59,6 @@ end)
 
 function xnMarkers_Remove(markerKey)
 	xnMarkers[markerKey].deleteNow = true
-	local textureDict = xnMarkers[markerKey].dict
-end
-
-function xnMarkers_In(markerKey)
-	return xnMarkers[markerKey].isInside
 end
 
 function ReqTexture(dict)
@@ -112,4 +107,3 @@ CreateThread(function()
 end)
 
 exports("Remove", xnMarkers_Remove)
-exports("In", xnMarkers_In)
