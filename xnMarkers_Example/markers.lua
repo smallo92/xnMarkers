@@ -1,6 +1,6 @@
 xnMarkers 'Burgershot' { 						-- (Required) No Default; (This name here needs to be unique, if it's not unique the first one with the name will be the one that's created)
     ['type'] = 1, 								-- (Required) No Default; (This is the marker type found at https://docs.fivem.net/docs/game-references/markers/)
-    ['position'] = vec(-1183, -883.91, 13.0), 	-- (Required) No Default; (Position you want the marker to be at)
+    ['position'] = vec(-1183, -883.91, 12.8), 	-- (Required) No Default; (Position you want the marker to be at)
 	['rgba'] = vec(255, 0, 0, 100), 			-- (Required) No Default; (This is a vector4 for red, green, blue, alpha values. There is some metadata trickery going on in xnMarkers to make this work for rgba)
 	['rangeToShow'] = 25.0, 					-- (Optional) Default: 50.0; (The range at which to show the marker)
 	['bobUpAndDown'] = false, 					-- (Optional) Default: False; (Do you want the marker to bob up and down?)
@@ -17,7 +17,7 @@ xnMarkers 'Burgershot' { 						-- (Required) No Default; (This name here needs t
 
 xnMarkers 'Burgershot2' { 					
     ['type'] = 1,
-    ['position'] = vec(-1183, -888.91, 13.0),
+    ['position'] = vec(-1170.42, -879.55, 13.0),
 	['rgba'] = vec(0, 100, 255, 100),
 	['scale'] = vec(2, 2, 0.6)
 }
