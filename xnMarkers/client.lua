@@ -73,12 +73,13 @@ CreateThread(function()
 	while true do
 		Wait(markerWait)
 		markerWait = 500
+		local ped = PlayerPedId()
+		local pedCoords = GetEntityCoords(ped)
+		
 		for markerKey, marker in pairs(xnMarkers) do
 			if marker.deleteNow then
 				marker = nil
 			else
-				local ped = PlayerPedId()
-				local pedCoords = GetEntityCoords(ped)
 				if #(pedCoords - marker.pos) < marker.range then
 					local textureDict = marker.textureDict
 					markerWait = 1
